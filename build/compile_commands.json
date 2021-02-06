@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/vendors",
+  "command": "/usr/bin/cc  -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -g -o CMakeFiles/glad.dir/glad/src/glad.c.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/src/glad.c",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/src/glad.c"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/main.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/main.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/main.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/Engine.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/Engine.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/Engine.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/visual/GLEnums.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLEnums.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLEnums.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/visual/GLBuffers.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLBuffers.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLBuffers.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/visual/GLVertexArray.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLVertexArray.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLVertexArray.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/visual/GLShader.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLShader.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/GLShader.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/visual/RenderCommand.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/RenderCommand.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/RenderCommand.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/visual/stb_image.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/stb_image.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/visual/stb_image.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/tools/Time.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/tools/Time.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/tools/Time.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/tools/Keyboard.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/tools/Keyboard.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/tools/Keyboard.cpp"
+},
+{
+  "directory": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src",
+  "command": "/usr/bin/c++ -DFMT_LOCALE -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_SHARED_LIB -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/include -I/home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glad/include -isystem /home/an/Desktop/dev/game_engines/visual/opengl/test/test/vendors/glm -g -std=gnu++17 -o CMakeFiles/test.dir/tools/Resource.cpp.o -c /home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/tools/Resource.cpp",
+  "file": "/home/an/Desktop/dev/game_engines/visual/opengl/test/test/src/tools/Resource.cpp"
+}
+]

@@ -1,0 +1,8 @@
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/CMakeFiles/rebuild_cache.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/CMakeFiles/edit_cache.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/vendors/CMakeFiles/rebuild_cache.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/vendors/CMakeFiles/edit_cache.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/vendors/CMakeFiles/glad.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src/CMakeFiles/rebuild_cache.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src/CMakeFiles/edit_cache.dir
+/home/an/Desktop/dev/game_engines/visual/opengl/test/test/build/src/CMakeFiles/test.dir

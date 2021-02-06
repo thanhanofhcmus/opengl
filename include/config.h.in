@@ -1,0 +1,7 @@
+#pragma once
+
+#include <string>
+
+#define PATH_RESOURCES 		std::string("@PATH_RESOURCES@")
+#define DIR_SHADER_SCRIPTS  std::string("@DIR_SHADER_SCIPTS@")
+#define DIR_TEXTURE		    std::string("@DIR_TEXTURE@")
