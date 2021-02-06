@@ -3,7 +3,6 @@
 #include <visual/GLEnums.h>
 #include <glm/glm.hpp>
 
-#include <tuple>
 #include <string>
 
 class GLShader

@@ -29,29 +29,23 @@ int main()
     std::string vertex_source =
     R"(#version 460 core
     layout (location = 0) in vec2 a_Pos;
-    layout (location = 1) in vec3 a_Color;
     layout (location = 2) in vec2 a_TexCoord;
-    out vec3 v_Color;
     out vec2 v_TexCoord;
     uniform mat4 u_MVP;
     void main()
     {
         gl_Position = u_MVP * vec4(a_Pos, 0.0f, 1.0f);
-        v_Color = a_Color;
         v_TexCoord = a_TexCoord;
     })";
 
     std::string fragment_source =
     R"(#version 460 core
-    in vec3 v_Color;
     in vec2 v_TexCoord;
     out vec4 FragColor;
-    uniform sampler2D u_Tex0;
     uniform sampler2D u_Tex1;
-    uniform float 	  u_Mix;
     void main()
     {
-        FragColor = vec4(v_Color, 1.0f) * mix(texture(u_Tex0, v_TexCoord), texture(u_Tex1, v_TexCoord), u_Mix);
+        FragColor = texture(u_Tex1, v_TexCoord);
     })";
 
     float vertices[] =
@@ -85,15 +79,17 @@ int main()
     shader.LoadFromMemory(vertex_source, fragment_source);
     shader.Bind();
 
-    GLTexture tex0("wall.jpg");
     GLTexture tex1("container.jpg");
 
-    shader.SendUniform1i("u_Tex0", tex0.GetIndex());
     shader.SendUniform1i("u_Tex1", tex1.GetIndex());
 
-    glm::mat4 camera = glm::ortho(-HWIDTH, HWIDTH, -HHEIGHT, HHEIGHT);
-    float u_Mix = 0.5f;
+    glm::mat4 proj = glm::ortho(-HWIDTH, HWIDTH, -HHEIGHT, HHEIGHT);
+    glm::mat4 view = glm::mat4(1.0f);
     float degree = 0.0f;
+    glm::vec3 pos1(0.0f);
+    glm::vec3 pos2(0.0f);
+
+    glm::vec4 color;
 
     while (Engine::IsRunning())
     {
@@ -105,21 +101,35 @@ int main()
 
         ImGui::ShowDemoWindow();
 
-        ImGui::Begin("Cube");
-        ImGui::SliderFloat("Mixture", &u_Mix, 0.0f, 1.0f);
-        shader.SendUniform1f("u_Mix", u_Mix);
+        ImGui::Begin("Position");
+        ImGui::SliderAngle("Angle 1", &degree);
+        ImGui::SliderFloat3("Position 1", &pos1.x, -HWIDTH, HWIDTH);
+        ImGui::SliderFloat3("Position 2", &pos2.x, -HWIDTH, HWIDTH);
+        ImGui::ColorPicker3("Clear color", &color.r);
         ImGui::End();
 
-        degree = Keyboard::Input2Degree(Keycode::A, Keycode::D, degree, 5.0f);
-        glm::mat4 mvp(1.0f);
-        mvp = glm::rotate(mvp, glm::radians(degree), glm::vec3(0.0f, 0.0f, 1.0f));
-        mvp = glm::scale(mvp, glm::vec3(400.0f));
-        mvp = camera * mvp;
-        shader.SendUniformMatrix4f("u_MVP", mvp);
+        RenderCommand::SetClearColor(color);
 
         RenderCommand::ClearDisplay();
 
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        {
+            glm::mat4 model(1.0f);
+            model = glm::translate(model, pos1);
+            model = glm::scale(model, glm::vec3(400.0f));
+            model = glm::rotate(model, degree, glm::vec3(0.0f, 0.0f, 1.0f));
+            shader.SendUniformMatrix4f("u_MVP", proj * view * model);
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        }
+
+        {
+            glm::mat4 model(1.0f);
+            model = glm::translate(model, pos2);
+            model = glm::scale(model, glm::vec3(400.0f));
+            shader.SendUniformMatrix4f("u_MVP", proj * view * model);
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        }
+
+
 
         RenderCommand::Display();
     }
